@@ -1,4 +1,4 @@
-cd const { processMedia } = require("../services/mediaService");
+const { processMedia } = require("../services/mediaService");
 const MediaDocument = require("../models/MediaDocument");
 const AppError = require("../utils/AppError");
 const multer = require("multer");

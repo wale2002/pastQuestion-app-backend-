@@ -1,5 +1,5 @@
 const authService = require("../services/authService");
-const Email = require("../utils/email");
+// const Email = require("../utils/email");
 
 exports.signup = async (req, res, next) => {
   try {
