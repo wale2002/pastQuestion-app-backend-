@@ -6,8 +6,8 @@ exports.signup = async (req, res, next) => {
     const { username, email, password } = req.body; // Added username to destructuring
     const user = await authService.signup(username, email, password);
     // Send welcome email
-    const emailInstance = new Email({ username, email });
-    await emailInstance.sendWelcome();
+    // const emailInstance = new Email({ username, email });
+    // await emailInstance.sendWelcome();
     res.status(201).json({ user, message: "Account created successfully" });
   } catch (error) {
     next(error);
